@@ -6010,7 +6010,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #eae3ff !important;
+  background-color: #e6eff6 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -9895,3 +9895,18 @@ h3 {
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
+
+.shadow-y:hover{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; 
+}
+.shadow-y:hover a{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  display: flex;
+  margin: auto;
+  background-color: blue;
+  border-radius: 10px;
+  width: 120px;
+  color: white !important;
+  padding: auto;
+  cursor: pointer;
+}
