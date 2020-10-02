@@ -1,5 +1,5 @@
 # challenge-bootstrap
 
-https://makraiyassin.github.io/challenge-bootstrap/
+https://makraiyassin.github.io/challenge-bootstrap/exercice-1
 
-https://makraiyassin.github.io/challenge-bootstrap/exercice2.html
+https://makraiyassin.github.io/challenge-bootstrap/exercice-2
