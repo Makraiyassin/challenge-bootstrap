@@ -4,21 +4,61 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- boodstrap css -->
-    <link rel="stylesheet" href="bootstrap.css">
-    
 	<!-- normalize css -->
     <!-- <link rel="stylesheet" href="normalize.css"> -->
     
 	<!-- CDN -->
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script> -->
-    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script> 
 
+	<!-- boodstrap css -->
+	<link rel="stylesheet" href="bootstrap.css">
+    
 	<title>Bootstrap exercice 1</title>
 </head>
 
 <body class="bg-secondary">
+
+<!-- _________________________________________________________________________________________________________ -->
+
+<script>
+	/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+	function openNav() {
+		document.getElementById("mySidebar").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+		document.getElementById("myButton").style.display = "none";
+	}
+	
+	/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+	function closeNav() {
+		document.getElementById("mySidebar").style.width = "0";
+		document.getElementById("main").style.marginLeft = "0";
+		document.getElementById("myButton").style.display = "block";
+	}
+
+	/* tooltips */
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();   
+	});
+</script>
+
+<div id="mySidebar" class="sidebar bg-secondary">
+	<a href="javascript:void(0)" class="closebtn text-dark" onclick="closeNav()">X</a>
+	<h5 class="text-dark">Navbar de Yassin</h5>
+	<a href="#" class="text-dark">Home</a>
+	<a href="#" class="text-dark">contact</a>
+</div>
+  	<div class="container-fluid">
+		<div class="row">
+			<div id="myButton" class="">
+				<button href="javascript:void(0)" class="closebtn bg-dark text-white rounded m-3" onclick="openNav()"><i class=""></i>Sidebar</button>
+			</div>
+		</div>
+	</div>
+<!-- _________________________________________________________________________________________________________ -->
+
+<!-- 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Yassin</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
 		</button>
@@ -38,13 +78,14 @@
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
 		</div>
-	</nav>
+	</nav> 
+ -->
 	<div class="row m-3 container-fluid">
 		<div class="card p-3 m-3 d-flex flex-column shadow-sm shadow-y" class="col-md-3 col-sm-6 col-xs-12" style="width: 18rem;">
 			<img height= "100px" src="images/joke1.svg" class="card-img-top mx-auto" alt="image">
 			<div class="card-body ">
 				<h5 class="card-title text-center text-secondary">Blagues nulles</h5>
-				<p  class="card-text text-center text-secondary three" style="height:150px">Pourquoi est-ce qu'on met tous les crocos en prison ? Parce que les crocos dealent.
+				<p  class="card-text text-center text-secondary" style="height:170px">Pourquoi est-ce qu'on met tous les crocos en prison ? Parce que les crocos dealent.
                     <br>J'ai une blague sur les magasins Mais elle a pas supermarché</p> 
                 <a href="https://www.topito.com/top-meilleures-blagues-16h16-la-fin-dune-epoque" title="clique ici pour lire plus de blagues ;)" class="btn page-link text-secondary font-weight-bold border-0">Learn more</a>
 			</div>
@@ -53,7 +94,7 @@
 			<img height= "100px" src="images/joke2.svg" class="card-img-top mx-auto" alt="image">
 			<div class="card-body">
 				<h5 class="card-title text-center text-secondary">Blagues nulles</h5>
-				<p  class="card-text text-center text-secondary three" style="height:150px">Qu'est-ce qu'un tennisman adore faire ? Rendre des services
+				<p  class="card-text text-center text-secondary " style="height:170px">Qu'est-ce qu'un tennisman adore faire ? Rendre des services
                     <br>Comment est-ce que la chouette sait que son mari fait la gueule ? Parce qu’HIBOUDE</p> 
                <a href="https://www.topito.com/top-meilleures-blagues-16h16-la-fin-dune-epoque" title="clique ici pour lire plus de blagues ;)" class="btn  page-link text-secondary font-weight-bold border-0">Learn more</a>
 			</div>
@@ -62,7 +103,7 @@
 			<img height= "100px" src="images/joke3.svg" class="card-img-top mx-auto" alt="image">
 			<div class="card-body">
 				<h5 class="card-title text-center text-secondary">Blagues nulles</h5>
-				<p  class="card-text text-center text-secondary three" style="height:150px">Pourquoi dit-on que les poissons travaillent illégalement ? Parce qu’ils n’ont pas de FISH de paie.
+				<p  class="card-text text-center text-secondary " style="height:170px">Pourquoi dit-on que les poissons travaillent illégalement ? Parce qu’ils n’ont pas de FISH de paie.
                     <br>Quel est le bar préféré des espagnols ? Le Bar-celone</p> 
                <a href="https://www.topito.com/top-meilleures-blagues-16h16-la-fin-dune-epoque" title="clique ici pour lire plus de blagues ;)" class="btn  page-link text-secondary font-weight-bold border-0">Learn more</a>
 			</div>
@@ -71,7 +112,7 @@
 			<img height= "100px" src="images/joke4.svg" class="card-img-top mx-auto" alt="image">
 			<div class="card-body">
 				<h5 class="card-title text-center text-secondary">Blagues nulles</h5>
-				<p  class="card-text text-center text-secondary three" style="height:150px">Pourquoi est-ce que les livres ont-ils toujours chaud ? Parce qu’ils ont une couverture
+				<p  class="card-text text-center text-secondary " style="height:170px">Pourquoi est-ce que les livres ont-ils toujours chaud ? Parce qu’ils ont une couverture
                     <br>Que dit une imprimante dans l'eau ? J’ai papier</p> 
                <a href="https://www.topito.com/top-meilleures-blagues-16h16-la-fin-dune-epoque" title="clique ici pour lire plus de blagues ;)" class="btn  page-link text-secondary font-weight-bold border-0">Learn more</a>
 			</div>
@@ -80,7 +121,7 @@
 			<img height= "100px" src="images/joke5.svg" class="card-img-top mx-auto" alt="image">
 			<div class="card-body">
 				<h5 class="card-title text-center text-secondary">Blagues nulles</h5>
-				<p  class="card-text text-center text-secondary three" style="height:150px">Pourquoi est-ce que les vêtements sont toujours fatigués quand ils sortent de la machine ? Parce qu’ils sont léssivés
+				<p  class="card-text text-center text-secondary " style="height:170px">Pourquoi est-ce que les vêtements sont toujours fatigués quand ils sortent de la machine ? Parce qu’ils sont léssivés
                     <br>Quel est le sport préféré des insectes? Le criquet</p> 
                <a href="https://www.topito.com/top-meilleures-blagues-16h16-la-fin-dune-epoque" title="clique ici pour lire plus de blagues ;)" class="btn  page-link text-secondary font-weight-bold border-0">Learn more</a>
 			</div>
@@ -89,7 +130,7 @@
 			<img height= "100px" src="images/joke6.svg" class="card-img-top mx-auto" alt="image">
 			<div class="card-body">
 				<h5 class="card-title text-center text-secondary">Blagues nulles</h5>
-				<p  class="card-text text-center text-secondary three" style="height:150px">Que se passe-t-il quand 2 poissons s'énervent ? Le thon monte
+				<p  class="card-text text-center text-secondary " style="height:170px">Que se passe-t-il quand 2 poissons s'énervent ? Le thon monte
                     <br>Quel fruit est assez fort pour couper des arbres? Le ci-tron</p> 
                <a href="https://www.topito.com/top-meilleures-blagues-16h16-la-fin-dune-epoque" title="clique ici pour lire plus de blagues ;)" class="btn  page-link text-secondary font-weight-bold border-0">Learn more</a>
 			</div>
@@ -98,7 +139,7 @@
 			<img height= "100px" src="images/joke7.svg" class="card-img-top mx-auto" alt="image">
 			<div class="card-body">
 				<h5 class="card-title text-center text-secondary">Blagues nulles</h5>
-				<p  class="card-text text-center text-secondary three" style="height:150px">Que fait un cendrier devant un ascenseur ? Il veut des cendres
+				<p  class="card-text text-center text-secondary " style="height:170px">Que fait un cendrier devant un ascenseur ? Il veut des cendres
                     <br>Que dit une noisette quand elle tombe à l'eau ? Je me noix</p> 
                <a href="https://www.topito.com/top-meilleures-blagues-16h16-la-fin-dune-epoque" title="clique ici pour lire plus de blagues ;)" class="btn  page-link text-secondary font-weight-bold border-0">Learn more</a>
 			</div>
@@ -107,12 +148,15 @@
 			<img height= "100px" src="images/joke8.svg" class="card-img-top mx-auto" alt="image">
 			<div class="card-body">
 				<h5 class="card-title text-center text-secondary">Blagues nulles</h5>
-				<p  class="card-text text-center text-secondary three" style="height:150px">Quel est l'aliment le plus hilarant? Le riz
+				<p  class="card-text text-center text-secondary " style="height:170px">Quel est l'aliment le plus hilarant? Le riz
                     <br>Pourquoi est-ce que les moutons aiment le chewing-gum? Parce que c’est bon pour la laine</p> 
                <a href="https://www.topito.com/top-meilleures-blagues-16h16-la-fin-dune-epoque" title="clique ici pour lire plus de blagues ;)" class="btn btn-primary page-link text-secondary font-weight-bold border-0">Learn more</a>
 			</div>
 		</div>
 	</div>
+<!-- __________________________________________________ -->
+
+<!-- __________________________________________________ -->
 </body>
 
 </html>
