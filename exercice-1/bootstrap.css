@@ -9909,4 +9909,10 @@ h3 {
   color: white !important;
   padding: auto;
   cursor: pointer;
+} 
+.three {
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 7;
+-webkit-box-orient: vertical;
 }
