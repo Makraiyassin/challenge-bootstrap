@@ -1,4 +1,4 @@
-# challenge-bootstrap
+# Challenge-bootstrap
 
 https://makraiyassin.github.io/challenge-bootstrap/exercice-1
 
